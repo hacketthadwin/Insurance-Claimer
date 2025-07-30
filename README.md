@@ -22,7 +22,9 @@ This application provides an interactive platform for users to query large insur
 All decisions are backed by **semantic search** using Gemini-generated embeddings and a **LangChain RAG pipeline**.
 
 ---
+![App Screenshot](screenshot/screenshot1.png)
 
+---
 ## 👨‍💻 Use Case Example
 
 ### 🔹 Query (from Web Frontend):
