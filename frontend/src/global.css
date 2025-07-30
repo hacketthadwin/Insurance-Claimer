@@ -1,0 +1,38 @@
+/* src/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Light Theme CSS Variables */
+:root {
+  --text-color-normal: #0a244d;
+  --text-color-light: #8cabd9;
+}
+
+/* Dark Theme CSS Variables (applied when html has 'dark' class) */
+html.dark {
+  --text-color-normal: hsl(210, 10%, 62%);
+  --text-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+}
+
+/* Base Body Styles (Defaulting to Light Mode Background) */
+body {
+  /* Light Mode Background Gradient */
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  color: black; /* Default text color for light mode */
+  /* Smooth transition for theme changes */
+  transition: background-color 0.3s ease, background-image 0.3s ease, color 0.3s ease;
+  min-height: 100vh; /* Ensures the body fills the viewport height */
+}
+
+/* Dark Mode Body Styles (Applied when 'dark' class is present on html) */
+html.dark body {
+  /* Dark Mode Background Gradient */
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  color: white; /* Text color for dark mode */
+}
